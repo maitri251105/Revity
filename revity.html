@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revity</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="revity.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <!-- ========== navbar ========== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top" style="height: 80px;">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-light fw-bold fs-2" href="#">
+                <i class="fa-solid fa-bars-staggered text-primary"></i>
+                Revity
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light border-none"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="nav nav-tabs bg-dark border-bottom-0 mb-lg-0 gap-4 ms-auto pb-2 pt-2 fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-2" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-2" href="#info">info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-2" href="#features">features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-2" href="#testimonial">testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-2" href="#pricing">pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-2" href="#blog">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-2" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== Back To Top Button ========== -->
+
+    <div class="back_to_top">
+        <div class="bt-animation"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+            class="bi bi-arrow-up-circle rounded-circle bg-primary text-light" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+        </svg>
+    </div>
+
+    <!-- jQuery -->
+
+    <script>
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                $(".back_to_top").fadeIn();
+            }
+            else {
+                $(".back_to_top").fadeOut();
+            }
+        });
+
+        $(".back_to_top").click(function () {
+            $("html,body").animate({ scrollTop: 0 }, "slow");
+        });
+
+    </script>
+
+    <!-- ========== hero section ========== -->
+
+    <div id="home" class="text-light d-flex align-items-center justify-content-center px-5" style="position: relative;">
+        <div class="container-fluid px-5">
+            <p class="lh-1 display-5">MEET US</p>
+            <p class="lh-1 fw-bold display-4">PROFESSIONALS</p>
+            <p class="lh-1 fw-bold display-4">AND CREATIVES</p>
+            <button type="button" class="btn text-light fw-bold border border-3 rounded-pill mt-3 px-5 py-2">
+                BUY TEMPLATE
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                    class="bi bi-cart-fill pb-1" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+            </button>
+            <button type="button" class="btn text-light fw-bold border border-3 rounded-pill mt-3 ms-1 px-5 py-2">
+                <a href="#info" class="text-light" style="text-decoration: none;">LEARN MORE</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    class="bi bi-caret-down-fill pb-1" viewBox="0 0 16 16">
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+            </button>
+        </div>
+        <div class="scroll_animation"></div>
+        <a href="#info" style="position: absolute;bottom: 42px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                class="p-2 border border-2 rounded-circle text-light" fill="currentColor" class="bi bi-chevron-down"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- ========== info section ========== -->
+
+    <div id="info">
+        <div class="container pt-5 pb-5">
+            <div class="row text-center">
+
+                <!-- heading -->
+
+                <div class="col-12">
+                    <h1 class="fw-light">WHY TO CHOOSE <span class="text-primary">REVITY</span></h1>
+                    <p class="mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et
+                        <br> dolore magna aliqua.
+                    </p>
+                </div>
+
+                <!-- column 1 -->
+
+                <div class="col-lg-3 col-md-6 portfolio-item my-3">
+                    <div class="card p-3 border-0">
+                        <div class="info_animation border border-2 border-primary rounded-circle mx-auto">
+                            <img src="images/icon-1.png.webp" alt="image"
+                                class="bg-primary p-4 rounded-circle mx-auto mt-2" width="90" height="90">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">Saves your time</h4>
+                            <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- column 2 -->
+
+                <div class="col-lg-3 col-md-6 portfolio-item my-3">
+                    <div class="card p-3 border-0">
+                        <div class="info_animation border border-2 border-primary rounded-circle mx-auto">
+                            <img src="images/icon-2.png.webp" alt="image"
+                                class="bg-primary p-4 rounded-circle mx-auto mt-2" width="90" height="90">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">Dedicated support</h4>
+                            <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- column 3 -->
+
+                <div class="col-lg-3 col-md-6 portfolio-item my-3">
+                    <div class="card p-3 border-0">
+                        <div class="info_animation border border-2 border-primary rounded-circle mx-auto">
+                            <img src="images/icon-3.png.webp" alt="image"
+                                class="bg-primary p-4 rounded-circle mx-auto mt-2" width="90" height="90">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">HTML5 + CSS3</h4>
+                            <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- column 4 -->
+
+                <div class="col-lg-3 col-md-6 portfolio-item my-3">
+                    <div class="card p-3 border-0">
+                        <div class="info_animation border border-2 border-primary rounded-circle mx-auto">
+                            <img src="images/icon-4.png.webp" alt="image"
+                                class="bg-primary p-4 rounded-circle mx-auto mt-2" width="90" height="90">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">Easy to customize</h4>
+                            <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== about section ========== -->
+
+    <div id="about">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+
+                <!-- heading -->
+
+                <div class="col-12 text-center">
+                    <h1 class="fw-light"><span class="text-primary">ABOUT</span> US</h1>
+                    <p class="mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et
+                        <br> dolore magna aliqua.
+                    </p>
+                </div>
+
+                <!-- row 1 -->
+
+                <div class="row pt-2">
+                    <!-- column 1 -->
+                    <div class="col-lg-6 col-md-12 p-5">
+                        <p class="fs-1 fw-light">WHO WE ARE</p>
+                        <p class="pb-1">Ex his quem suscipit tincidunt, ius veritus petentium ei. His an soluta audiam,
+                            duo solet aeterno erroribus an, ei vix option aliquip. Solum nulla perfecto his et, vel
+                            labore adipisci delicata ne, duo mucius urbanitas eu. Stet consulatu intellegebat sed ex.
+                            Mea ei inani definiebas.</p>
+                        <p class="pb-1">In semper dolorum luptatum sit, sed te eros scripta mandamus, per et postea
+                            officiis luptatum. Dicit tollit labores eu vix. Affert discere volutpat ei cum. Cu zril
+                            graece noluisse sea, id nec stet consetetur referrentur, te tota nonumy feugait mei. Mea eu
+                            sale sanctus.</p>
+                        <button type="button" class="btn btn-primary rounded-pill px-4">LEARN MORE</button>
+                    </div>
+                    <!-- column 2 -->
+                    <div class="col-lg-6 col-md-12 pt-4 ps-4">
+                        <div class="mt-3">
+                            <p class="d-flex justify-content-between fs-4 fw-light mt-3">HTML<span
+                                    class="fs-5">95%</span></p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="d-flex justify-content-between fs-4 fw-light mt-3">CSS<span
+                                    class="fs-5">90%</span></p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="d-flex justify-content-between fs-4 fw-light mt-3">JAVA SCRIPT<span
+                                    class="fs-5">75%</span></p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="d-flex justify-content-between fs-4 fw-light mt-3">PHP<span
+                                    class="fs-5">70%</span></p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== features section ========== -->
+
+    <div id="features">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+
+                <!-- heading -->
+
+                <div class="col-12 text-center">
+                    <h1 class="fw-light">OUR <span class="text-primary">FEATURES</span></h1>
+                    <p class="mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+
+                <!-- column 1 -->
+
+                <div class="row pt-5">
+                    <div class="col-lg-7 col-md-12 text-center">
+                        <img src="images/index-02.png.webp" alt="image" class="img-fluid py-auto">
+                    </div>
+                    <div class="col-lg-5 col-md-12 pe-5 ps-5 pb-5 pt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                            class="bi bi-brush-fill text-primary pt-1 ps-4" viewBox="0 0 16 16">
+                            <path
+                                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04" />
+                        </svg>
+                        <span class="fs-3 ps-3">Elegant design</span>
+                        <p class="fs-6 ps-4 pe-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                            class="bi bi-clock text-primary pt-1 ps-4" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                        </svg>
+                        <span class="fs-3 ps-3">Always in time</span>
+                        <p class="fs-6 ps-4 pe-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                            class="bi bi-cash text-primary pt-1 ps-4" viewBox="0 0 16 16">
+                            <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                            <path
+                                d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+                        </svg>
+                        <span class="fs-3 ps-3 ">Cost effective</span>
+                        <p class="fs-6 ps-4 pe-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== ready and responsive section ========== -->
+
+    <div id="ready_and_responsive">
+        <div class="container-fluid py-5">
+
+            <!-- row-1 -->
+
+            <div class="row py-5 bg-primary">
+                <div class="col-3"></div>
+                <div class="col-lg-1 col-sm-12 text-center">
+                    <img src="images/index-03.jpg.webp" alt="image" class="rounded-circle">
+                </div>
+                <div class="col-lg-2 col-sm-12 text-light text-center my-4">
+                    <span class="fs-3 fw-light">Peter Woods</span>
+                    <br>
+                    <span class="fs-5 fw-light">Head Visual Hero</span>
+                </div>
+                <div class="col-lg-4 col-sm-12 text-light px-5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <!-- row-2 -->
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 px-0">
+                    <img src="images/index-04.jpg.webp" alt="image" class="img-fluid p-0 m-0">
+                </div>
+                <div class="col-lg-6 col-md-12 p-5">
+                    <h2 class="text-secondary">RETINA READY</h2>
+                    <h2 class="text-secondary">AND RESPONSIVE</h2>
+                    <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <ul class="pt-2">
+                        <li class="pb-3">Lorem ipsum dolor sit amet</li>
+                        <li class="pb-3">Lorem ipsum dolor sit amet</li>
+                        <li class="pb-3">Lorem ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ========== testomonial section ========== -->
+
+    <div id="testimonial">
+        <div class="container-fluid pt-3 img-fluid">
+            <div class="row">
+
+                <!-- heading -->
+
+                <div class="col-12 text-center">
+                    <h1 class="fw-light">WHAT OUR <span class="text-primary">CLIENTS</span> SAYS</h1>
+                    <p class="mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+
+                <!-- row 1 -->
+
+                <div class="row pt-5">
+
+                    <div class="col-lg-6 col-md-12 pt-5">
+                        <div class="card mx-5">
+                            <div class="card-body p-5">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 text-center">
+                                        <img src="images/index-09.jpg.webp" alt="image" class="rounded-circle">
+                                        <div class="name pt-3 fs-4">Eric Shaw</div>
+                                        <div class="role fs-">Lead Manager</div>
+                                    </div>
+                                    <div class="col-lg-9 col-md-12">
+                                        <span class="ps-2 pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 pt-5">
+                        <div class="card mx-5">
+                            <div class="card-body p-5">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 text-center">
+                                        <img src="images/index-10.jpg.webp" alt="image" class="rounded-circle">
+                                        <div class="name pt-3 fs-4">Mahfuz Raid</div>
+                                        <div class="role fs-">CEO</div>
+                                    </div>
+                                    <div class="col-lg-9 col-md-12">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== partner section ========== -->
+
+    <div id="partners">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+
+                <!-- heading -->
+
+                <div class="col-12 text-center">
+                    <h1 class="fw-light">OUR <span class="text-primary">PARTNERS</span></h1>
+                    <p class="mt-5 mx-2 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et
+                        <br>dolore magna aliqua.
+                    </p>
+                </div>
+
+                <!-- column 1 -->
+
+                <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- First Slide -->
+
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/brand-1.png.webp" class="card-img-top p-5" alt="Card 1">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <img src="images/brand-2.png.webp" class="card-img-top p-5" alt="Card 2">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <img src="images/brand-3.png.webp" class="card-img-top p-5" alt="Card 3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Slide -->
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/brand-4.png.webp" class="card-img-top p-5" alt="Card 4">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <img src="images/brand-5.png.webp" class="card-img-top p-5" alt="Card 6">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <img src="images/brand-2.png.webp" class="card-img-top p-5 px-5" alt="Card 5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== pricing section ========== -->
+
+    <div id="pricing">
+        <div class="container py-5">
+            <div class="row">
+
+                <!-- heading -->
+
+                <div class="col-12 text-center">
+                    <h1 class="fw-light"><span class="text-primary">PRICING</span> PLANS</h1>
+                    <p class="mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+
+                <!-- column 1 -->
+
+                <div class="row row-cols-1 row-cols-md-3 my-5 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Free</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title pricing-card-title fs-1 fw-bold">$0<small
+                                        class="text-muted fw-light">/mo</small></p>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>10 users included</li>
+                                    <li>2 GB of storage</li>
+                                    <li>Email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for
+                                    free</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Pro</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title pricing-card-title fs-1 fw-bold">$15<small
+                                        class="text-muted fw-light">/mo</small></p>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>20 users included</li>
+                                    <li>10 GB of storage</li>
+                                    <li>Priority email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                            <div class="card-header py-3 text-white bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title pricing-card-title fs-1 fw-bold">$29<small
+                                        class="text-muted fw-light">/mo</small></p>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>30 users included</li>
+                                    <li>15 GB of storage</li>
+                                    <li>Phone and email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== subscribe section ========== -->
+
+    <div id="subscribe">
+        <div class="container-fluid bg-primary">
+            <p class="text-center text-light fs-1 py-5">
+                SUBSCRIBR TO US AND GET NEWS RIGHT INTO YOUR EMAIL
+                <button type="button" class="btn btn-light rounded-pill px-4 py-2 ms-5 fs-5">SERVICES</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- ========== project section ========== -->
+
+    <div id="project">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+
+                <!-- heading -->
+
+                <div class="col-12 text-center">
+                    <h1 class="fw-light">OUR LATEST <span class="text-primary">PROJECTS</span></h1>
+                    <p class="mt-5 mx-2 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et
+                        <br>dolore magna aliqua.
+                    </p>
+                </div>
+
+                <!-- column 1 -->
+
+                <div class="col-md-4 portfolio-item my-3">
+                    <div class="card">
+                        <img src="images/portfolio-1-500x430.jpg"
+                            alt="image">
+                    </div>
+                </div>
+
+                <!-- column 2 -->
+
+                <div class="col-md-4 portfolio-item my-3">
+                    <div class="card">
+                        <img src="images/portfolio-2-500x430.jpg"
+                            alt="image">
+                    </div>
+                </div>
+
+                <!-- column 3 -->
+
+                <div class="col-md-4 portfolio-item my-3">
+                    <div class="card">
+                        <img src="images/portfolio-3-500x430.jpg"
+                            alt="image">
+                    </div>
+                </div>
+
+                <!-- column 4 -->
+
+                <div class="col-md-4 portfolio-item my-3">
+                    <div class="card">
+                        <img src="images/portfolio-4-500x430.jpg"
+                            alt="image">
+                    </div>
+                </div>
+
+                <!-- column 5 -->
+
+                <div class="col-md-4 portfolio-item my-3">
+                    <div class="card">
+                        <img src="images/portfolio-5-500x430.jpg"
+                            alt="image">
+                    </div>
+                </div>
+
+                <!-- column 6 -->
+
+                <div class="col-md-4 portfolio-item my-3">
+                    <div class="card">
+                        <img src="images/portfolio-6-500x430.jpg"
+                            alt="image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+     <!-- ========== FAQ section ========== -->
+
+     <div id="FAQ">
+        <div class="container py-5">
+            <div class="row">
+
+                <!-- heading -->
+
+                <div class="col-12 text-center">
+                    <h1 class="fw-light">FAQ</h1>
+                    <p class="mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et
+                        <br>dolore magna aliqua.
+                    </p>
+                </div>
+
+                <!-- column 1 -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Eos atdocendi convenire ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body rounded">Phasellus hendrerit. Pellentesque aliquet nibh
+                                        nec urna.
+                                        In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+                                        sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc
+                                        tortor eu
+                                        nibh. Nullam mollis. Ut justo. Suspendisse potenti.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Has ne similique intellegam ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+                                        In nisi
+                                        neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+                                        sollicitudin
+                                        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
+                                        Nullam
+                                        mollis. Ut justo. Suspendisse potenti.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Ei petentium tincidunt ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+                                        In nisi
+                                        neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+                                        sollicitudin
+                                        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
+                                        Nullam
+                                        mollis. Ut justo. Suspendisse potenti.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">
+                                        Eos atdocendi convenire ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body rounded">Phasellus hendrerit. Pellentesque aliquet nibh
+                                        nec urna.
+                                        In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+                                        sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc
+                                        tortor eu
+                                        nibh. Nullam mollis. Ut justo. Suspendisse potenti.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false" aria-controls="flush-collapseFive">
+                                        Has ne similique intellegam ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+                                        In nisi
+                                        neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+                                        sollicitudin
+                                        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
+                                        Nullam
+                                        mollis. Ut justo. Suspendisse potenti.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                        aria-expanded="false" aria-controls="flush-collapseSix">
+                                        Ei petentium tincidunt ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Phasellus hendrerit. Pellentesque aliquet nibh nec urna.
+                                        In nisi
+                                        neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+                                        sollicitudin
+                                        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
+                                        Nullam
+                                        mollis. Ut justo. Suspendisse potenti.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== blog section ========== -->
+
+    <div id="blog">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+
+                <!-- heading -->
+
+                <div class="col-12 text-center">
+                    <h1 class="fw-light">OUR LATEST <span class="text-primary">BLOG</span></h1>
+                    <p class="mt-5 mx-2 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et
+                        <br>dolore magna aliqua.
+                    </p>
+                </div>
+
+                <!-- column 1 -->
+
+                <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- First Slide -->
+
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="images/index-header-03-850x530.jpg" class="card-img-top" alt="Card 1">
+                                        <div class="card-body p-5">
+                                            <p>Category: <a href="#">general</a></p>
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            <span class="fw-light hover">9ThemeW</span>
+                                            <i class="fa-regular fa-calendar-days text-primary ms-4"></i>
+                                            <span class="fw-light hover">Feburary 17,2017</span>
+                                            <h5 class="card-title pt-4">Marketing Strategy</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Voluptatem quo, maiores non voluptatum soluta veniam consequatur
+                                                tempora tempore minus laudantium quibusdam temporibus quisquam
+                                                consequuntur adipisci, iste corporis. Asperiores harum laudantium quis,
+                                                deleniti error odio eveniet.</p>
+                                            <button type="button" class="btn btn-primary rounded-pill px-4">LEARN
+                                                MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="images/portfolio-1-500x430.jpg" class="card-img-top" alt="Card 2">
+                                        <div class="card-body p-5">
+                                            <p>Category: <a href="#">general</a></p>
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            <span class="fw-light hover">9ThemeW</span>
+                                            <i class="fa-regular fa-calendar-days text-primary ms-4"></i>
+                                            <span class="fw-light hover">Feburary 17,2017</span>
+                                            <h5 class="card-title pt-4">Our Compling Design 2</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Voluptatem quo, maiores non voluptatum soluta veniam consequatur
+                                                tempora tempore minus laudantium quibusdam temporibus quisquam
+                                                consequuntur adipisci, iste corporis. Asperiores harum laudantium quis,
+                                                deleniti error odio eveniet.</p>
+                                            <button type="button" class="btn btn-primary rounded-pill px-4">LEARN
+                                                MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="images/index-14-850x530.jpg" class="card-img-top" alt="Card 3">
+                                        <div class="card-body p-5">
+                                            <p>Category: <a href="#">general</a></p>
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            <span class="fw-light hover">9ThemeW</span>
+                                            <i class="fa-regular fa-calendar-days text-primary ms-4"></i>
+                                            <span class="fw-light hover">Feburary 17,2017</span>
+                                            <h5 class="card-title pt-4">Our Compling Design</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Voluptatem quo, maiores non voluptatum soluta veniam consequatur
+                                                tempora tempore minus laudantium quibusdam temporibus quisquam
+                                                consequuntur adipisci, iste corporis. Asperiores harum laudantium quis,
+                                                deleniti error odio eveniet.</p>
+                                            <button type="button" class="btn btn-primary rounded-pill px-4">LEARN
+                                                MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Slide -->
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="images/index-15-850x530.jpg" class="card-img-top" alt="Card 4">
+                                        <div class="card-body p-5">
+                                            <p>Category: <a href="#">general</a></p>
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            <span class="fw-light hover">9ThemeW</span>
+                                            <i class="fa-regular fa-calendar-days text-primary ms-4"></i>
+                                            <span class="fw-light hover">Feburary 17,2017</span>
+                                            <h5 class="card-title pt-4">Office News</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Voluptatem quo, maiores non voluptatum soluta veniam consequatur
+                                                tempora tempore minus laudantium quibusdam temporibus quisquam
+                                                consequuntur adipisci, iste corporis. Asperiores harum laudantium quis,
+                                                deleniti error odio eveniet.</p>
+                                            <button type="button" class="btn btn-primary rounded-pill px-4">LEARN
+                                                MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="images/portfolio-5-500x430.jpg" class="card-img-top" alt="Card 6">
+                                        <div class="card-body p-5">
+                                            <p>Category: <a href="#">general</a></p>
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            <span class="fw-light hover">9ThemeW</span>
+                                            <i class="fa-regular fa-calendar-days text-primary ms-4"></i>
+                                            <span class="fw-light hover">Feburary 17,2017</span>
+                                            <h5 class="card-title pt-4">About Ninetheme</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Voluptatem quo, maiores non voluptatum soluta veniam consequatur
+                                                tempora tempore minus laudantium quibusdam temporibus quisquam
+                                                consequuntur adipisci, iste corporis. Asperiores harum laudantium quis,
+                                                deleniti error odio eveniet.</p>
+                                            <button type="button" class="btn btn-primary rounded-pill px-4">LEARN
+                                                MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="images/index-13-850x530.jpg" class="card-img-top" alt="Card 5">
+                                        <div class="card-body p-5">
+                                            <p>Category: <a href="#">general</a></p>
+                                            <i class="fa-solid fa-user text-primary"></i>
+                                            <span class="fw-light hover">9ThemeW</span>
+                                            <i class="fa-regular fa-calendar-days text-primary ms-4"></i>
+                                            <span class="fw-light hover">Feburary 17,2017</span>
+                                            <h5 class="card-title pt-4">Marketing Strategy</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Voluptatem quo, maiores non voluptatum soluta veniam consequatur
+                                                tempora tempore minus laudantium quibusdam temporibus quisquam
+                                                consequuntur adipisci, iste corporis. Asperiores harum laudantium quis,
+                                                deleniti error odio eveniet.</p>
+                                            <button type="button" class="btn btn-primary rounded-pill px-4">LEARN
+                                                MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== contact section ========== -->
+
+    <div id="contact">
+        <div class="container-sm p-5">
+            <div class="row text-center">
+
+                <!-- heading -->
+
+                <div class="col-12 text-center">
+                    <h1 class="fw-light">GET IN <span class="text-primary">TOUCH</span></h1>
+                    <p class="mt-5 mx-2 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et
+                        <br>dolore magna aliqua.
+                    </p>
+                </div>
+
+                <!-- column 1 -->
+
+
+                <div class="col-md-4 portfolio-item my-3">
+                    <div class="card p-3 border-0 px-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt text-primary my-2 mx-auto" style="height: 60px;width: 60px;"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                        <div class="card-body">
+                            <h4 class="card-title">Location</h4>
+                            <p class="card-text mt-3 pb-4">London, England</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- column 2 -->
+
+                <div class="col-md-4 portfolio-item my-3">
+                    <div class="card border-0 p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone text-primary my-2 mx-auto" style="height: 60px;width: 60px;"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg>
+                        <div class="card-body">
+                            <h4 class="card-title">Phones:</h4>
+                            <div class="card-text mt-3">+(900) 123-45-67</div>
+                            <div class="card-text">+(900) 123-45-67</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- column 3 -->
+
+                <div class="col-md-4 portfolio-item my-3">
+                    <div class="card border-0 p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope text-primary my-2 mx-auto" style="height: 60px;width: 60px;"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                        <div class="card-body">
+                            <h4 class="card-title">Email:</h4>
+                            <div class="card-text mt-3">support@example.com</div>
+                            <div class="card-text">help@example.com</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- column 4 -->
+
+                <form>
+                    <div class="row mt-3 g-3">
+                        <div class="col-md-6 col-sm-12">
+                            <input type="text" class="form-control border-0 rounded-pill p-3" placeholder="Full Name"
+                                aria-label="Full Name" requierd>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <input type="text" class="form-control border-0 rounded-pill p-3" placeholder="Your message"
+                                aria-label="Your message" requierd>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-md-12">
+                            <input type="email" class="form-control border-0 rounded-pill p-3"
+                                placeholder="Email address" aria-label="Email address" requierd>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-md-12">
+                            <input type="number" class="form-control border-0 rounded-pill p-3"
+                                placeholder="Phone number" aria-label="Phone number" requierd>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary rounded-pill px-4 py-2">SEND MESSAGE</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== footer ========== -->
+
+    <div id="footer">
+        <div class="container-fluid bg-dark px-5 py-5">
+            <div class="row text-light">
+                <div class="col-lg-2 col-md-12 text-center">
+                    <ul class="list-group">
+                        <li class="list-group-item bg-dark text-light border-0">About Company</li>
+                        <li class="list-group-item bg-dark text-light border-0">Contacts</li>
+                        <li class="list-group-item bg-dark text-light border-0">shop</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 text-center">
+                    <ul class="list-group"> 
+                        <li class="list-group-item bg-dark text-light border-0">Collections</li>
+                        <li class="list-group-item bg-dark text-light border-0">News</li>
+                        <li class="list-group-item bg-dark text-light border-0">FAQs</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 text-center">
+                    <img src="images/logo.png.webp" alt="img" class="img-fluid" height="40" width="300">
+                </div>
+                <div class="col-lg-2 col-md-12 offset-lg-2 text-center">
+                    <ul class="list-group list-group-horizontal justify-content-center">
+                        <li class="list-group-item bg-dark text-light border-0">Press</li>
+                        <li class="list-group-item bg-dark text-light border-0">About</li>
+                        <li class="list-group-item bg-dark text-light border-0">Careers</li>
+                    </ul>
+                    <ul class="list-group list-group-horizontal justify-content-center">
+                        <li class="list-group-item bg-dark text-light border-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg></li>
+                        <li class="list-group-item bg-dark text-light border-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                          </svg></li>
+                        <li class="list-group-item bg-dark text-light border-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                          </svg></li>
+                    </ul>
+                    <p>© All rigths reserved 2017.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
